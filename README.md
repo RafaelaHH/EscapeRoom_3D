@@ -1,5 +1,6 @@
 EscapeRoom3D
 
+Equipo de desarrollo: 4 integrantes
 Integrantes
 Julia Rafaela Herrera Heiden
 Tanina Magdiel Soliz Quizpe
