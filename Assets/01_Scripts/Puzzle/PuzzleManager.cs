@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PuzzleManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private string secretCode = "1234";
+    [SerializeField] private ChestController chest;
 
-    // Update is called once per frame
-    void Update()
+    public bool ValidateCode(string input)
     {
-        
+        if (input != secretCode)
+        {
+            Debug.Log("Código incorrecto.");
+            return false;
+        }
+
+        if (chest != null)
+        {
+            chest.Unlock();
+        }
+
+        Debug.Log("Código correcto.");
+        return true;
     }
 }
