@@ -10,5 +10,6 @@ public class OldDoorController : MonoBehaviour
     {
         isOpen = true;
         Debug.Log("Puerta antigua abierta.");
+        Debug.Log("Controlador antiguo actualizado.");
     }
 }
