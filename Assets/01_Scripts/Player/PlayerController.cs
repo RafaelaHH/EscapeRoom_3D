@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         Debug.Log("Movement system active");
+    }
     private void Move()
     {
         float h = Input.GetAxis("Horizontal");
