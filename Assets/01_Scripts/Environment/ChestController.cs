@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChestController : MonoBehaviour
 {
     [SerializeField] private bool unlocked;
+    private bool opened;
 
     public void Unlock()
     {
@@ -14,6 +15,24 @@ public class ChestController : MonoBehaviour
 
     public void Interact()
     {
-        Debug.Log(unlocked ? "Cofre abierto." : "El cofre está cerrado.");
+        if (!unlocked)
+        {
+            Debug.Log("El cofre está cerrado.");
+            return;
+        }
+
+        if (opened)
+        {
+            Debug.Log("El cofre ya está abierto.");
+            return;
+        }
+
+        opened = true;
+        Debug.Log("Cofre abierto.");
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ObtainKey();
+        }
     }
 }

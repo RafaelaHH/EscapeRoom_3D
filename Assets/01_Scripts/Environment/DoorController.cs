@@ -6,6 +6,12 @@ public class DoorController : MonoBehaviour
 {
     public void Interact()
     {
-        Debug.Log("Puerta abierta.");
+        if (GameManager.Instance == null || !GameManager.Instance.HasKey)
+        {
+            Debug.Log("Necesitas la llave.");
+            return;
+        }
+
+        Debug.Log("Puerta abierta. ¡Escape completado!");
     }
 }

@@ -4,10 +4,19 @@ public class PuzzleTestPanel : MonoBehaviour
 {
     [SerializeField] private PuzzleManager puzzleManager;
     [SerializeField] private ChestController chest;
+    [SerializeField] private DoorController door;
+
+    private void Start()
+    {
+        if (door == null)
+        {
+            door = FindObjectOfType<DoorController>();
+        }
+    }
 
     private void OnGUI()
     {
-        GUILayout.BeginArea(new Rect(16f, 16f, 280f, 150f), GUI.skin.box);
+        GUILayout.BeginArea(new Rect(16f, 16f, 280f, 180f), GUI.skin.box);
         GUILayout.Label("Prueba del puzzle");
 
         GUI.enabled = puzzleManager != null;
@@ -25,6 +34,12 @@ public class PuzzleTestPanel : MonoBehaviour
         if (GUILayout.Button("Interactuar con cofre"))
         {
             chest.Interact();
+        }
+
+        GUI.enabled = door != null;
+        if (GUILayout.Button("Interactuar con puerta"))
+        {
+            door.Interact();
         }
 
         GUI.enabled = true;
