@@ -12,11 +12,14 @@ public class PuzzleManager : MonoBehaviour
         bool valid = code == correctCode;
         if (valid)
         {
-            Debug.Log("Código correcto.");
-            if (chest != null)
+            if (chest == null)
             {
-                chest.Unlock();
+                Debug.LogError("PuzzleManager: no hay cofre asignado, el código correcto no desbloquea nada.");
+                return false;
             }
+
+            Debug.Log("Código correcto.");
+            chest.Unlock();
         }
         else
         {
