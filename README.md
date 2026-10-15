@@ -17,8 +17,9 @@ Proyecto: Escape Room 3D con Unity.
 
 ## El Estudio del Coleccionista (diseño del cuarto)
 Un estudio victoriano con muebles de Poly Haven y Sketchfab (créditos en `Assets/04_Models/CREDITOS.txt`).
-- **Construirlo:** abrir `MainScene` y usar el menú **Escape Room > Construir el Estudio del Coleccionista**.
-  Necesita el paquete glTFast (ya está en `Packages/manifest.json`). Se puede volver a ejecutar cuando se quiera.
+- **Probarlo:** abrir `Assets/00_Scenes/MainScene` y dar Play (la escena ya viene armada). La primera vez Unity
+  tarda unos minutos importando los modelos y el paquete glTFast (ya está en `Packages/manifest.json`).
+- **Reconstruirlo:** menú **Escape Room > Construir el Estudio del Coleccionista** (borra y vuelve a armar el cuarto).
 - **Controles:** WASD moverse, ratón o Q/R girar, E interactuar, Shift correr. Clic para capturar el ratón.
 - **Acertijo:** la nota sobre la consola dice el orden (tiempo, arte, mundo, saber). El reloj marca la 1,
   el cuadro tiene un 2, el globo tiene 3 alfileres y del librero sobresalen 4 libros → código **1234**

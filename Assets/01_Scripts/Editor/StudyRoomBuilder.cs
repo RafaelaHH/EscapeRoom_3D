@@ -65,10 +65,10 @@ public static class StudyRoomBuilder
         FixGlassAndFlames(room.gameObject);
         SetupEnvironment(room);
 
+        AddSceneToBuildSettings(); // "Volver a jugar" carga la escena por nombre
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
         AssetDatabase.SaveAssets();
-        AddSceneToBuildSettings();
         Debug.Log("Estudio del Coleccionista construido. Dale Play para probarlo.");
     }
 
