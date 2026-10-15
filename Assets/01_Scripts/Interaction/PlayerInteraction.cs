@@ -32,6 +32,9 @@ public class PlayerInteraction : MonoBehaviour
         }
 
         if (closest != null)
+        {
+            Debug.Log("Interactuando con " + ((Component)closest).name + ".");
             closest.Interact();
+        }
     }
 }
