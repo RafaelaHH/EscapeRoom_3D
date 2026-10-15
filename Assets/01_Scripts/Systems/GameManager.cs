@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // Reinicia el estado de la partida al cargar la escena
+        GameManager.Instance.Initialize();
         Debug.Log("GameManager listo.");
     }
 
