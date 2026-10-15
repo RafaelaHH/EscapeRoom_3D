@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChestController : MonoBehaviour
+public class ChestController : MonoBehaviour, IInteractable
 {
     [SerializeField] private bool unlocked;
     private bool opened;
