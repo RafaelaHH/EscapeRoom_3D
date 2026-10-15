@@ -1,0 +1,25 @@
+MODELOS Y TEXTURAS DEL ESTUDIO DEL COLECCIONISTA
+
+POLY HAVEN (https://polyhaven.com) - Licencia CC0: dominio público, no piden crédito.
+Modelos (glTF 1k, carpeta PolyHaven/):
+  treasure_chest (cofre), large_castle_door (puerta), vintage_grandfather_clock_01 (reloj de pie),
+  wooden_bookshelf_worn (librero), book_encyclopedia_set_01 (libros), Chandelier_02 (lámpara de techo),
+  GothicCabinet_01 (armario), GothicCommode_01 (cómoda), ClassicConsole_01 (consola), ArmChair_01 (sillón),
+  side_table_01 (mesita), brass_candleholders (candelabro), wooden_candlestick (vela), vintage_oil_lamp
+  (lámpara de aceite), ornate_mirror_01 (espejo), marble_bust_01 (busto), bronze_whale_statue (ballena),
+  brass_vase_01 (jarrón), seadogs_compass (brújula), vintage_suitcase (maletas), carved_wooden_elephant
+  (elefante).
+Texturas (jpg 1k, carpeta ../05_Textures/PolyHaven/):
+  herringbone_parquet (piso), quatrefoil_jacquard_fabric (papel de pared), dark_paneled_wood (paneles),
+  american_walnut_veneer (molduras y vigas), ceiling_interior (techo), floral_jacquard (alfombra).
+
+SKETCHFAB - Licencia CC BY 4.0: se pueden usar gratis, pero HAY QUE NOMBRAR AL AUTOR.
+https://creativecommons.org/licenses/by/4.0/
+Carpeta              Modelo                        Autor                Enlace
+cuadro_oleo/         "Victorian Framed Painting"   Matthew Collings     https://sketchfab.com/3d-models/victorian-framed-painting-pbr-game-ready-b2895c1c3b42401a949deac049e0051d
+globo_terraqueo/     "Prop Globe"                  Rosbergen Designs    https://sketchfab.com/3d-models/prop-globe-acbc64addc98410582d1f631dd9b6d5f
+(Son los mismos archivos que usamos en el escape room VR; cada carpeta trae su license.txt.)
+
+HECHO CON PIEZAS (Poly Haven no tiene estos objetos):
+  la llave, el candado de combinación, la nota con sello de lacre, los alfileres del globo,
+  el cojín del cofre, las paredes, molduras y el pasillo de salida.

@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ChestController : MonoBehaviour, IInteractable
 {
     [SerializeField] private bool unlocked;
+    // Lo que pasa en la escena al abrirlo (tapa que se levanta, llave que sale)
+    [SerializeField] private UnityEvent onOpened = new UnityEvent();
     private bool opened;
+
+    public UnityEvent OnOpened => onOpened;
 
     public void Unlock()
     {
@@ -29,6 +34,7 @@ public class ChestController : MonoBehaviour, IInteractable
 
         opened = true;
         Debug.Log("Cofre abierto.");
+        onOpened.Invoke();
 
         if (GameManager.Instance != null)
         {
