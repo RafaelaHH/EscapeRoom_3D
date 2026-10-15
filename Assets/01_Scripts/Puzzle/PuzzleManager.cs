@@ -35,4 +35,10 @@ public class PuzzleManager : MonoBehaviour
 
         return valid;
     }
+
+    // WIP: sistema de pistas, todavia no esta listo para Dev.
+    public string GetHint(int level)
+    {
+        return level <= 1 ? "El codigo tiene 4 digitos." : "Empieza por 1.";
+    }
 }
