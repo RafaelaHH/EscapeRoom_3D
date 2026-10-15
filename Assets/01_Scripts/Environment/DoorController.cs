@@ -6,7 +6,7 @@ public class DoorController : MonoBehaviour
 {
     public void Interact()
     {
-        if (GameManager.Instance == null || !GameManager.Instance.HasKey)
+        if (GameManager.Instance != null && GameManager.Instance.HasKey)
         {
             Debug.Log("Necesitas la llave.");
             return;
