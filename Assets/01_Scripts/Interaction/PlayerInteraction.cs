@@ -12,9 +12,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private void TryInteract()
     {
-        Debug.Log("Buscando objeto interactuable...");
-
         IInteractable closest = null;
+        GameObject closestObject = null;
         float closestDistance = float.MaxValue;
 
         foreach (Collider hit in Physics.OverlapSphere(transform.position, interactionDistance))
@@ -27,14 +26,19 @@ public class PlayerInteraction : MonoBehaviour
             if (distance < closestDistance)
             {
                 closest = interactable;
+                closestObject = hit.gameObject;
                 closestDistance = distance;
             }
         }
 
         if (closest != null)
         {
-            Debug.Log("Interactuando con " + ((Component)closest).name + ".");
+            Debug.Log("Interactuando con " + closestObject.name + ".");
             closest.Interact();
+        }
+        else
+        {
+            Debug.Log("No hay nada con qué interactuar.");
         }
     }
 }
