@@ -6,10 +6,20 @@ public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private string correctCode = "1234";
     [SerializeField] private ChestController chest;
+    [SerializeField] private int maxAttempts = 3;
+
+    private int attempts;
 
     public bool ValidateCode(string code)
     {
-        bool valid = code == correctCode;
+        if (attempts >= maxAttempts)
+        {
+            Debug.Log("Sin intentos disponibles.");
+            return false;
+        }
+
+        attempts++;
+        bool valid = code.Trim() == correctCode;
         if (valid)
         {
             Debug.Log("Código correcto.");
@@ -20,7 +30,7 @@ public class PuzzleManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Código incorrecto.");
+            Debug.Log("Código incorrecto. Intentos restantes: " + (maxAttempts - attempts));
         }
 
         return valid;
