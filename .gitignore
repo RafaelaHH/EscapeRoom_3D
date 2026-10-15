@@ -25,3 +25,6 @@ Thumbs.db
 
 # Informes de errores
 sysinfo.txt
+
+# Archivos generados por el laboratorio
+TempLaboratorio/
