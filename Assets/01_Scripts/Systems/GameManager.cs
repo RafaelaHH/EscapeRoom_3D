@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        Initialize();
         Debug.Log("GameManager listo.");
     }
 
